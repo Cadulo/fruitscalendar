@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#start">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#calendar">Calendario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fruits">Frutas</a>
+              </li>
+            </ul>
+
+            <div class="form-check my-2 me-2">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                English
+              </label>
+            </div>
+            <div class="form-check my-2 me-2">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Español
+              </label>
+            </div>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="./images/fruits1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark " style="--bs-bg-opacity: .5">
+                  <h5>Frutas de temporada </h5>
+                  <p >Ecuador es un pais rico en frutas y vegetales. Consumirlos en su temporada tiene numerosas ventajas</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./images/fruits2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark " style="--bs-bg-opacity: .5">
+                  <h5>Frutas de temporada</h5>
+                  <p>Poseen un mayor aporte nutricional</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./images/fruits3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark " style="--bs-bg-opacity: .5">
+                  <h5>Frutas de temporada</h5>
+                  <p>Consumirlas ayuda a la economia</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+          <div id="start" class="col-sm-12">
+            <div class="row border-bottom py-4">
+              <h2>Ventajas de consumir fruta de temporada</h5>
+              <p>Elegir fruta y verdura de temporada es apostar por un mundo más sostenible, económico y saludable.
+                Debido a que están en un momento óptimo de consumo poseen un mejor sabor, color, aroma y aporte nutricional. Adicionalmente por la alta oferta, podemos conseguir mejores precios mientras aportamos a la economia local y reducimos el desperdicio.
+            </div>
+
+            <div id="calendar" class="row border-bottom py-4 d-flex justify-content-center" >
+                <div class="d-flex justify-content-center">
+                    <img
+                    src="./images/calendario.png"
+                    class="rounded img-fluid rounded"
+                    alt="..."
+                  />
+                </div>
+              
+                <h6 class="text-center my-2">
+                  Calendario de frutas en Ecuador
+                </h6>
+            </div>
+            <div id="fruits" class="row d-flex justify-content-center gap-3 my-2">
+                  <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img src="./images/maracuya.jpg" class="card-img-top" alt="maracuyá">
+                    <div class="card-body">
+                        <h5 class="card-title">Macuyá</h5>
+                        <p class="card-text">
+                          El maracuyá es un fruto con gran aporte de vitamina C, potasio y calcio. Adicionalmente posee una gran concentración en antioxidantes.
+                        </p>
+                        <h6>Temporada alta</h6>
+                        <p>Cosecha en todo el año</p>
+                        <a href="#calendar" class="btn btn-primary">Calendario</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img src="./images/orange.jpg" class="card-img-top" alt="orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Naranja</h5>
+                        <p class="card-text">
+                          Es una fruta rica en vitamina C. Su consumo ayuda al sistema inmunologico y permite prevenir enfermedades virales entre otros beneficios. 
+                        </p>
+                        <h6>Temporada alta</h6>
+                        <p>Octubre</p>
+                        <a href="#calendar" class="btn btn-primary">Calendario</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img src="./images/tangerine.jpg" alt="tangerine" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mandarina</h5>
+                        <p class="card-text">
+                          Contribuye a combatir el colesterol, estreñimiento, presión arterial, deshidratación, obesidad y estrés.</p>
+                        <h6>Temporada alta</h6>
+                        <p>Octubre</p>
+                        <a href="#calendar" class="btn btn-primary">Calendario</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img  src="./images/blackberry.jpg" alt="blackberry" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mora</h5>
+                        <p class="card-text">Entre sus muchas ventajas nutricionales, las moras proporcionan potasio, magnesio, vitaminas C y K y fibra. </p>
+                        <h6>Temporada alta</h6>
+                        <p>Cosecha en todo el año</p>
+                        <a href="#calendar" class="btn btn-primary">Calendario</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img src="./images/grapefruit.jpg" alt="grapefruit" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Toronja</h5>
+                        <p class="card-text">Las toronjas ayudan a combatir el estreñimiento y padecimientos del sistema urinario, reducen los niveles de colesterol malo, sus licopenos, estimulan la eliminación de toxinas</p>
+                        <h6>Temporada alta</h6>
+                        <p>Octubre</p>
+                        <a href="#calendar" class="btn btn-primary">Calendario</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img src="./images/lemon.jpg" alt="lemon" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Limón</h5>
+                        <p class="card-text">El limón es un potente antibiótico natural. Ayuda a combatir enfermedades respiratorias, desde gripe, amigdalitis y catarro, hasta pulmonía.</p>
+                        <h6>Temporada alta</h6>
+                        <p>Cosechas en marzo, abril, junio, julio y octubre</p>
+                        <a href="#calendar" class="btn btn-primary">Calendario</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                  <img src="./images/mango.jpg" alt="mango" class="card-img-top">
+                  <div class="card-body">
+                      <h5 class="card-title">Mango</h5>
+                      <p class="card-text">El mango es una fruta versátil, su ingesta diaria puede ayudar a prevenir cáncer. Ayuda a la absorción de hierro, la formación de glóbulos rojos, colágeno, dientes y huesos.</p>
+                      <h6>Temporada alta</h6>
+                      <p>Noviembre y diciembre</p>
+                      <a href="#calendar" class="btn btn-primary">Calendario</a>
+                  </div>
+              </div>
+            </div>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./app.js"></script>
+</body>
+</html>

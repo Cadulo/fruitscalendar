@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#start">Start</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#calendar">Calendar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fruits">Fruits</a>
+              </li>
+            </ul>
+
+            <div class="form-check my-2 me-2">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+              <label class="form-check-label" for="flexRadioDefault1">
+                English
+              </label>
+            </div>
+            <div class="form-check my-2 me-2">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+                Español
+              </label>
+            </div>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="4000">
+                <img src="./images/fruits1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark " style="--bs-bg-opacity: .5">
+                  <h5>Seasonal fruits </h5>
+                  <p >Ecuador is a country rich in fruits and vegetables. Consuming them in season has many advantages</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./images/fruits2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark " style="--bs-bg-opacity: .5">
+                  <h5>Seasonal fruits</h5>
+                  <p>They have a higher nutritional value</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="./images/fruits3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark " style="--bs-bg-opacity: .5">
+                  <h5>Seasonal fruits</h5>
+                  <p>Consuming them helps the economy</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+          <div id="start" class="col-sm-12">
+            <div class="row border-bottom py-4">
+              <h2>Advantages of consuming seasonal fruit</h5>
+              <p>Choosing seasonal fruits and vegetables is an investment in a more sustainable, cost-effective, and healthy world.
+                They have better flavor, color, aroma, and nutritional contribution because they are consumed at an optimal time. Furthermore, because of the high supply, we can get better prices while supporting the local economy and reducing waste.
+            </div>
+
+            <div id="calendar" class="row border-bottom py-4 d-flex justify-content-center" >
+                <div class="d-flex justify-content-center">
+                    <img
+                    src="./images/calendario.png"
+                    class="rounded img-fluid rounded"
+                    alt="..."
+                  />
+                </div>
+              
+                <h6 class="text-center my-2">
+                  Ecuador Fruit Calendar
+                </h6>
+            </div>
+            <div id="fruits" class="row d-flex justify-content-center gap-3 my-2">
+                  <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img src="./images/maracuya.jpg" class="card-img-top" alt="maracuyá">
+                    <div class="card-body">
+                        <h5 class="card-title">Passion fruit</h5>
+                        <p class="card-text">
+                          Passion fruit is a fruit with high vitamin C, potassium, and calcium content. Additionally, it has a high concentration of antioxidants.
+                        </p>
+                        <h6>High season</h6>
+                        <p>Year-round harvesting</p>
+                        <a href="#calendar" class="btn btn-primary">Calendar</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img src="./images/orange.jpg" class="card-img-top" alt="orange">
+                    <div class="card-body">
+                        <h5 class="card-title">Orange</h5>
+                        <p class="card-text">
+                          It is a fruit rich in vitamin C. Its consumption helps the immune system and helps prevent viral diseases, among other benefits.
+                        </p>
+                        <h6>High season</h6>
+                        <p>October</p>
+                        <a href="#calendar" class="btn btn-primary">Calendar</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img src="./images/tangerine.jpg" alt="tangerine" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tangerine</h5>
+                        <p class="card-text">
+                          Contributes to combating cholesterol, constipation, blood pressure, dehydration, obesity, and stress.</p>
+                        <h6>High season</h6>
+                        <p>Octuber</p>
+                        <a href="#calendar" class="btn btn-primary">Calendar</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img  src="./images/blackberry.jpg" alt="blackberry" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Blackberry</h5>
+                        <p class="card-text">Among their many nutritional benefits, blackberries provide potassium, magnesium, vitamins C and K, and fiber. </p>
+                        <h6>High season</h6>
+                        <p>Year-round harvesting</p>
+                        <a href="#calendar" class="btn btn-primary">Calendar</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img src="./images/grapefruit.jpg" alt="grapefruit" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Grapefruit</h5>
+                        <p class="card-text">Grapefruits help to combat constipation and urinary system ailments, reduce bad cholesterol levels, and stimulate the elimination of toxins.</p>
+                        <h6>High season</h6>
+                        <p>Octubre</p>
+                        <a href="#calendar" class="btn btn-primary">Calendar</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                    <img src="./images/lemon.jpg" alt="lemon" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Lemon</h5>
+                        <p class="card-text">Lemon is a potent natural antibiotic. It helps fight respiratory illnesses, from flu, tonsillitis, and colds to pneumonia.</p>
+                        <h6>High season</h6>
+                        <p>Harvests in March, April, June, July and October</p>
+                        <a href="#calendar" class="btn btn-primary">Calendar</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-md-4 border-bottom py-4" style="width: 18rem;">
+                  <img src="./images/mango.jpg" alt="mango" class="card-img-top">
+                  <div class="card-body">
+                      <h5 class="card-title">Mango</h5>
+                      <p class="card-text">Mango is a versatile fruit, and its daily intake can help prevent cancer. It helps with the absorption of iron, the formation of red blood cells, collagen, teeth, and bones.</p>
+                      <h6>High season</h6>
+                      <p>November and december/p>
+                      <a href="#calendar" class="btn btn-primary">Calendar</a>
+                  </div>
+              </div>
+            </div>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./app.js"></script>
+</body>
+</html>
